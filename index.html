@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <div class="w-75 mx-auto my-3">
+        <h1 class="mb-2 text-muted text-center">Bookmark System</h1>
+
+        <div class="mb-2">
+            <label for="siteName">Site Name</label>
+            <input type="text" class="form-control" id="siteName">
+        </div>
+
+        <div class="mb-2">
+            <label for="siteURL">Site URL</label>
+            <input type="text" class="form-control" id="siteURL">
+        </div>
+    
+        <button class="btn btn-outline-info mt-3" id="myBtn" onclick="add()">Add Site</button>
+    </div>
+
+    <input type="text" onkeyup="search(this.value)" class="form-control w-50 m-auto mb-3" placeholder="search....." id="search">
+
+    <div class="container my-2">
+        <table class="table table-striped">
+
+            <thead>
+
+                <th>index</th>
+                <th>Site Name</th>
+                <th>Site URL</th>
+                <th>update</th>
+                <th>delete</th>
+                <th>visit</th>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
